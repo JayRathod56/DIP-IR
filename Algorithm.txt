@@ -1,0 +1,19 @@
+clear all input and output from the console
+create a 3x3 matrix and assign it to var x
+then create a 2x3 matrix and assign it to var h
+use conv2() function to get 2D Linear convolution of x and h
+
+clear all input and output from the console
+Take input from user for x and h variable
+convert x and h to (discrete) fast fourier transformation and assign to var X and H
+multiply X and H and assign it to var Y
+convert Y to inverse (discrete) fast fourier transform
+display the Circular Convolution Results i.e Y
+
+clear all input and output from the console
+create two 2x2 matrix and assign it to var x and h
+use function conv2 to get a 2d convolution of x and h and store it in y
+add column 1 and 3 of y and assign it to var y1 with col 2 of y
+then add row 1 and 3 of y1 and assign it to var y2 with row 2 of y1
+display linear convolution result i.e y
+and display circular convolution expressed as linear convolution i.e y2 

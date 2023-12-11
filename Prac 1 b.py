@@ -1,15 +1,23 @@
-print('Jay Rathod T-127')
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+   
+# Read an image
+image_Grey = cv2.imread('C:\\Users\\jayan\\Documents\\Sem 6\\DIP\\Jay_GreyScale_img.jpg')
+   
+# Apply log transformation method
+c = 255 / np.log(1 + np.max(image_Grey))
+log_image = c * (np.log(image_Grey + 1))
+   
+# Specify the data type so that
+# float value will be converted to int
+log_transformed_image = np.array(log_image, dtype = np.uint8)
 
-def VofStr(t,x):
-    
-    for i in range (0,len(x)):
-        if t in x:
-            return 1
-        else:
-            return 0
-        
-s1=[item for item in input ('Enter 1st String: ').split()]
-s2=[item for item in input ('Enter 2nd String: ').split()]
-s3=[item for item in input ('Enter 3rd String: ').split()]
-t=str(input('Enter a Word: '))
-print('Vector : ',VofStr(t,s1),VofStr(t,s2),VofStr(t,s3))
+# Save edited images.
+cv2.imwrite('log_transformed_image'+'.jpg', log_transformed_image)
+   
+# Display both images
+plt.imshow(image_Grey)
+plt.show()
+plt.imshow(log_transformed_image)
+plt.show()
