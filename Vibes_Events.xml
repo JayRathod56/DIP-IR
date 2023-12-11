@@ -1,0 +1,30 @@
+<Events Vibes="Registration">
+<Participant Name="Jay">
+   <Chess>Yes</Chess>
+   <Valorant>No</Valorant>
+   <Cec>No</Cec>
+   <DPM>Yes</DPM>
+   <Payment_Status>Not Paid</Payment_Status>
+</Participant>
+<Participant Name="Bhavesh">
+   <Chess>Yes</Chess>
+   <Valorant>No</Valorant>
+   <Cec>No</Cec>
+   <DPM>No</DPM>
+   <Payment_Status>Paid</Payment_Status>
+</Participant>
+<Participant Name="Deadspy">
+   <Chess>No</Chess>
+   <Valorant>No</Valorant>
+   <Cec>No</Cec>
+   <DPM>Yes</DPM>
+   <Payment_Status>Not Paid</Payment_Status>
+</Participant>
+<Participant Name="small deadspy">
+   <Chess>Yes</Chess>
+   <Valorant>Yes</Valorant>
+   <Cec>Yes</Cec>
+   <DPM>Yes</DPM>
+   <Payment_Status>Paid</Payment_Status>
+</Participant>
+</Events>
